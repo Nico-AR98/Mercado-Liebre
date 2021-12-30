@@ -1,0 +1,322 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Tipografia*/
+
+.precio {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    display: none;
+}
+
+.desc {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.titulo{
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+}
+
+/*Main Home*/
+
+body{
+    background-color: #ebebeb;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section article {
+    border:1px solid #ebebeb;
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+article img {
+    width: 100%;
+}
+
+.camionEnvio{
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    border: 1px solid #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 75%;
+    border-radius: 50%;
+}
+
+/*Header*/
+
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+#menu nav {
+    display: none;
+}
+
+#compraEnCuotas{
+    display: flex;
+    
+}
+
+#barraBusqueda {
+    align-self: center;
+    padding-left: 10px;
+    width: 50%;
+    height: 4vh;
+    display: flex;
+}
+
+#barraBusqueda input {
+    width: 92%;
+}
+
+.iconLupa {
+    align-self: center;
+    width: 8%;
+    color: #666;
+    font-size: 16px;
+}
+
+#compraEnCuotas {
+    padding-top: 5px;
+    margin: auto;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    padding-top: 15px;
+}
+
+.logo {
+    width: 50%;
+}
+
+#cabecera {
+    padding-bottom: 20px;
+}
+
+#superior{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.seccionMenu{
+    padding-top: 3em;
+}
+
+.burger-menu{
+    margin-left: 47%;
+    margin-top: 5px;
+    padding-top: 8px;
+    width: 2em;
+    height: 1.75em;
+    border-radius: 3px;
+    background-color: #1259c3;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner {
+    width: 100%;
+}
+
+#bannerHome {
+    width: 100%;
+}
+
+/*Footer (pie de página)*/
+
+footer {
+    background-color: white;
+    width: 100%;
+}
+
+footer article {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.icon-footer{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#1259c3 ;
+}
+
+/*Pagina de crear cuenta*/
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+form label,button {
+    font-size: 14px;
+}
+
+/*Medias Querys*/
+@media (min-width: 361px){
+    h4{
+        display: block;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    main section article div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .precio {
+        text-align: left;
+        width: 45%;
+    }
+
+    .desc {
+        text-align: left;
+        width: 55%;
+    }
+
+    #menu nav {
+        display: block;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 769px){
+
+    /*header*/ 
+
+    #superior {
+        flex-wrap: nowrap;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .logo {
+        width: 33%;
+        padding-right: 5px;
+    }
+
+    #superior div {
+        padding-left: 5px;
+        width: 33%;
+    }
+
+    #menu nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        width: 33%;
+        justify-content: flex-start ;
+    }
+
+    nav ul li {
+        padding-left: 5px ;
+        padding-right: 5px;
+    }
+
+    /*Main*/
+
+    main {
+        margin:30px;
+    }
+
+    main section article {
+        width: 45%;
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    }
+
+}
+
+@media (min-width:992px){
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 100%;
+        justify-self: center;
+        margin:0px;
+    }
+    
+    main section article {
+        width:22%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    nav ul {
+        justify-content:flex-start ;
+    }
+
+    nav ul li {
+        padding-left: 5px ;
+        padding-right: 5px;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
