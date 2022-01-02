@@ -52,65 +52,81 @@
 
         </div>
 
-        <section class="banner">
-            <img id="bannerHome"src="/public/images/img-home-banner.jpg" alt="img-home-banner">
-        </section>
-
     </header>
     <main>
         <h1 class="titulo">Crear cuenta</h1>
-    <form action="">
-        
-        <label for="nombreApellido">Nombre y apellido</label>
-        <input type="text" name="nombreApellido" required>
 
-        <label for="nombreUsuari@">Nombre de Usuari@</label>
-        <input type="text" name="nombreUsuari@" required>
+        <form action="">
 
-        <label for="email">Email</label>
-        <input type="email" name="email" required>
+            <input type="text" name="nombreApellido" placeholder="Nombre y Apellido" required>
 
-        <label for="fechaNacimiento">Fecha de Nacimiento</label>
-        <input name="fechaNacimiento" type="date" required>
+            <input type="text" name="nombreUsuari@" placeholder="Nombre de Usuari@" required>
 
-        <label>Categorias de interés</label>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
 
-        <input type="checkbox" value="electro">
-        <label>Electro</label>
+            <input type="text" name="domicilio" placeholder="Domicilio" required>
 
-        <input type="checkbox" value="moda">
-        <label>Moda</label>
+            <div class="itemForm">
+                <label class="subtitulo" for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input name="fechaNacimiento" type="date" required>
+            </div>
 
-        <input type="checkbox" value="hogar">
-        <label>Hogar</label>
+            <section class="itemForm">
+            <label class="subtitulo" for="categoriasInteres">Categorias de interés</label>
 
-        <input type="checkbox" value="jugueteria">
-        <label>Juguetería</label>
+                <div>
+                    <input name="categoriasInteres"  type="checkbox" value="electro">
+                    <label>Electro</label>
+                </div>
 
-        <input type="checkbox" value="vida sana">
-        <label>Vida Sana</label>
+                <div>
+                    <input name="categoriasInteres" type="checkbox" value="moda">
+                    <label>Moda</label>
+                </div>   
 
-        <label for="perfilUsuario">Perfil del usuario</label>
-        <input type="checkbox" name="perfilUsuario" value="vendedor">
-        <label>Vendedor</label>
-        <input type="checkbox" name="perfilUsuario" value="comprador">
-        <label>Comprador</label>
+                <div>
+                    <input name="categoriasInteres" type="checkbox" value="hogar">
+                    <label>Hogar</label>
+                </div>  
 
-        <label for="fotoUsuario"></label>
-        <input type="file" name="fotoUsuario">
+                <div>
+                    <input name="categoriasInteres" type="checkbox" value="jugueteria">
+                    <label>Juguetería</label>
+                </div>
 
-        <label for="contra">Contraseña</label>
-        <input type="password" name="contra" required>
+                <div>
+                    <input name="categoriasInteres" type="checkbox" value="vida sana">
+                    <label>Vida Sana</label>
+                </div>
+            </section>
 
-        <label for="contraConfirmar">Confirmar Contraseña</label>
-        <input type="password" name="contraConfirmar" required>
+            <section class="itemForm">
+                <label class="subtitulo" for="perfilUsuario">Perfil del usuario</label>
+                <div>
+                    <input type="checkbox" name="perfilUsuario" value="vendedor">
+                    <label>Vendedor</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="perfilUsuario" value="comprador">
+                    <label>Comprador</label>
+                </div>
+            </section>
+         
+            <div class="itemForm">
+                <label class="subtitulo" for="fotoUsuario">Foto de usuario</label>
+                <input type="file" name="fotoUsuario">
+            </div>
 
-        <button type="submit">Enviar</button>
 
-        <button type="reset">Borrar todo</button>
+            <input type="password" name="contra" placeholder="Contraseña" required>
 
-        
-    </form>
+            <input type="password" name="contraConfirmar" placeholder="Confirmar Contraseña" required>
+
+
+            <button type="submit">Enviar</button>
+
+            <button id="botonBorrar" type="reset">Borrar todo</button>
+        </form>
 
     </main>
     
