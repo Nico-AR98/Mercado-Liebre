@@ -56,7 +56,7 @@
     <main>
         <h1 class="titulo">Crear cuenta</h1>
 
-        <form action="">
+        <form action="" id="formRegistro">
 
             <input type="text" name="nombreApellido" placeholder="Nombre y Apellido" required>
 
@@ -66,62 +66,49 @@
 
             <input type="text" name="domicilio" placeholder="Domicilio" required>
 
-            <div class="itemForm">
-                <label class="subtitulo" for="fechaNacimiento">Fecha de Nacimiento</label>
-                <input name="fechaNacimiento" type="date" required>
-            </div>
+            <label class="subtitulo" for="fechaNacimiento">Fecha de Nacimiento</label>
 
-            <section class="itemForm">
+            <input name="fechaNacimiento" type="date" required>
+
             <label class="subtitulo" for="categoriasInteres">Categorias de interés</label>
 
-                <div>
-                    <input name="categoriasInteres"  type="checkbox" value="electro">
-                    <label>Electro</label>
-                </div>
+            <input class="inputCheck" name="categoriasInteres"  type="checkbox" value="electro">
 
-                <div>
-                    <input name="categoriasInteres" type="checkbox" value="moda">
-                    <label>Moda</label>
-                </div>   
+            <label>Electro</label>
 
-                <div>
-                    <input name="categoriasInteres" type="checkbox" value="hogar">
-                    <label>Hogar</label>
-                </div>  
+            <input class="inputCheck" name="categoriasInteres" type="checkbox" value="moda">
 
-                <div>
-                    <input name="categoriasInteres" type="checkbox" value="jugueteria">
-                    <label>Juguetería</label>
-                </div>
+            <label>Moda</label>
 
-                <div>
-                    <input name="categoriasInteres" type="checkbox" value="vida sana">
-                    <label>Vida Sana</label>
-                </div>
-            </section>
+            <input class="inputCheck" name="categoriasInteres" type="checkbox" value="hogar">
 
-            <section class="itemForm">
-                <label class="subtitulo" for="perfilUsuario">Perfil del usuario</label>
-                <div>
-                    <input type="checkbox" name="perfilUsuario" value="vendedor">
-                    <label>Vendedor</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="perfilUsuario" value="comprador">
-                    <label>Comprador</label>
-                </div>
-            </section>
-         
-            <div class="itemForm">
-                <label class="subtitulo" for="fotoUsuario">Foto de usuario</label>
-                <input type="file" name="fotoUsuario">
-            </div>
+            <label>Hogar</label>
 
+            <input class="inputCheck" name="categoriasInteres" type="checkbox" value="jugueteria">
+
+            <label>Juguetería</label>
+
+            <input class="inputCheck" name="categoriasInteres" type="checkbox" value="vida sana">
+
+            <label>Vida Sana</label>
+
+            <label class="subtitulo" for="perfilUsuario">Perfil del usuario</label>
+
+            <input class="inputCheck" type="checkbox" name="perfilUsuario" value="vendedor">
+
+            <label>Vendedor</label>
+
+            <input class="inputCheck" type="checkbox" name="perfilUsuario" value="comprador">
+
+            <label>Comprador</label>
+
+            <label class="subtitulo" for="fotoUsuario">Foto de usuario</label>
+
+            <input type="file" name="fotoUsuario">
 
             <input type="password" name="contra" placeholder="Contraseña" required>
 
             <input type="password" name="contraConfirmar" placeholder="Confirmar Contraseña" required>
-
 
             <button type="submit">Enviar</button>
 

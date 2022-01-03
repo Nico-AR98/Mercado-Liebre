@@ -43,7 +43,7 @@ body{
 main {
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    min-width: 90vw;
     margin: auto;
 }
 
@@ -197,7 +197,6 @@ footer article {
 form{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 2rem;
     width: 100%;
@@ -215,23 +214,44 @@ form button:hover {
     transition-duration: 0.25s;
 }
 
-/*Crear cuenta*/
+form input:hover {
+    border: 2px solid #EAC926;
+}
 
-.itemForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*Crear cuenta*/
+#formRegistro {
+    justify-content: center;
+}
+
+#formRegistro input {
+    text-align: center;
+    width: 60%;
+    height: 30px;
+    max-width: 300px;
+    max-height: 60px;
+    border: 2px solid #ebebeb;
+}
+
+.inputCheck {
+    width: 15px !important;
+    height: 15px!important;
+}
+
+#formRegistro .subtitulo {
     margin-top: 1rem;
 }
 
-.itemForm input {
-    width: 100%;
+#formRegistro button {
+    height: 32px;
+    width: 176px;
+    border: 1px solid #ebebeb;
 }
 
 
 /*Login*/
 
 #formLogin {
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
     justify-content: center;
@@ -267,11 +287,6 @@ form button:hover {
     margin: auto;
 }
 
-
-
-#formLogin input:hover {
-    border: 2px solid #EAC926;
-}
 
 
 /*Medias Querys*/
